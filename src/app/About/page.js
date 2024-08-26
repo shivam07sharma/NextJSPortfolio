@@ -33,7 +33,7 @@ const Aboutme = () => {
           <h2 className='text-white text-xl md:text-2xl my-7 w-full font-semibold mx-1'>ADDITIONAL SKILLS</h2>
           <div className=' flex flex-col gap-3'>
             {extraSkills.map(skill => (
-              <ExtraSkill name={skill} />
+              <ExtraSkill key={skill} name={skill} />
             ))}
           </div>
         </div>

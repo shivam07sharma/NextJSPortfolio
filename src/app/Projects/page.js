@@ -48,7 +48,7 @@ const ProjectList=()=>{
         <>
         <div className="w-full md:w-9/12 h-max flex flex-col my-5  md:flex-row  md:gap-12 flex-wrap md:ml-[12vw]">
             {myProjects.map(item=>(
-                <Project projLink={item.projLink} imageLink={item.imageLink} title={item.title} html={item.html} css={item.css} js={item.js} react={item.reactLogo} tailwind={item.tailwind} nextjs={item.nextjs} />
+                <Project key={item.projLink} projLink={item.projLink} imageLink={item.imageLink} title={item.title} html={item.html} css={item.css} js={item.js} react={item.reactLogo} tailwind={item.tailwind} nextjs={item.nextjs} />
             ))}
         </div>
         </>

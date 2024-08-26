@@ -18,7 +18,7 @@ const MyBlogs = () => {
     { Blogs &&
      <div className='w-screen md:w-[100vmin] h-max flex flex-col md:flex-row flex-wrap gap-6 justify-evenly items-center mx-auto my-4'>
     {Blogs.map(blog=>(
-       <Link href={`https://webblogwriter.netlify.app/BlogPost/${blog._id}`}> <Blog key={blog._id} image={blog.image} title={blog.title} cont={blog.content}/> </Link>
+       <Link key={blog._id} href={`https://webblogwriter.netlify.app/BlogPost/${blog._id}`}> <Blog image={blog.image} title={blog.title} cont={blog.content}/> </Link>
     ))}
     </div> }
     {Error && 
