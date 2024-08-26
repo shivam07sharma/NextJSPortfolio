@@ -42,7 +42,7 @@ const Blog=({image,title,cont})=>{
         <>
         <div className='w-11/12 md:w-[46vmin] min-h-52 max-h-max border-white border-2 rounded-md flex flex-col justify-between bg-black overflow-hidden'>
             <div className='w-full h-max max-h-52 overflow-hidden'>
-                <img src={image} alt="" className='w-full h-max'/>
+                <img src={image} alt="images" className='w-full h-max'/>
             </div>
             <div className='text-white text-lg px-4 my-3 line-clamp-2'>
                 {title}
