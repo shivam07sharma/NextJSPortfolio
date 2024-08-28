@@ -18,7 +18,7 @@ const Aboutme = () => {
         </div>
         <div className='my-9 w-11/12 mx-auto'>
         <h2 className='text-white text-xl md:text-2xl  my-5 w-full font-normal mx-auto text-center'>
-          Hey There! <br/> Myself Shivam Sharma and I'm a Proficient Web Developer from Kanpur Uttar Pradesh.
+          Hey There! <br/> Myself Shivam Sharma and I  am a Proficient Web Developer from Kanpur Uttar Pradesh.
         </h2>
         </div>
         <div className='my-5 mx-auto w-screen font-semibold  flex gap-2 flex-wrap'>
