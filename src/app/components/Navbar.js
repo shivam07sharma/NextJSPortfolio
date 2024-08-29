@@ -25,7 +25,7 @@ const Navbar = () => {
         <>
             <nav className="sticky top-0 py-1 z-10 w-screen h-max md:h-16 bg-[#2c2e3a] flex justify-between flex-wrap ">
                 <div className="text-white w-11/12 text-xl  md:text-2xl md:w-max h-max mx-auto md:mx-14 my-autov py-3 flex justify-between items-center ">
-                    <div className="material-symbols-outlined block md:hidden mx-4 my-auto" onClick={() => { setMenu(!getMenu) }}>menu</div>
+                    <img src="svgs/menu.png" alt="image" className="md:hidden  mx-4 my-auto h-8" onClick={() => { setMenu(!getMenu) }}/>
                     <div>Portfolio</div>
                 </div>
                 <List addClass="hidden md:flex" />

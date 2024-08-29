@@ -33,16 +33,16 @@ return (
         <div className="w-[88vmin] h-max mx-auto my-10  " >
             <form onSubmit={handleSubmit(onSubmit)} className="flex w-11/12 h-full   flex-col justify-center items-center gap-5">
 
-                <input className="w-full h-8 rounded-lg text-[black] font-normal focus:bg-[#2c2e3a]  focus:text-white active::border-2 active::border-white text-sm px-2" type="text" placeholder="Enter Name" {...register("Name", {
+                <input className="w-[90vmin] mx-auto h-8 rounded-lg text-[black] font-normal focus:bg-[#2c2e3a]  focus:text-white active::border-2 active::border-white text-sm px-2" type="text" placeholder="Enter Name" {...register("Name", {
                     required: { value: true, message: "*This field is Required" }
                 })} />
-                <input className="w-full h-8 rounded-lg text-[black] font-normal focus:bg-[#2c2e3a] active::border-2 active::border-white focus:text-white text-sm px-2 " type="email" placeholder="Enter Your Email" {...register("Email", {
+                <input className="w-[90vmin] mx-auto h-8 rounded-lg text-[black] font-normal focus:bg-[#2c2e3a] active::border-2 active::border-white focus:text-white text-sm px-2 " type="email" placeholder="Enter Your Email" {...register("Email", {
                     required: { value: true, message: "*This field is Required" }
                 })} />
-                <input className="w-full h-8 rounded-lg text-[black] font-normal focus:bg-[#2c2e3a] active::border-2 active::border-white focus:text-white text-sm px-2 " type="text" placeholder="Contact No.(Optional)" {...register("Phone")
+                <input className="w-[90vmin] mx-auto h-8 rounded-lg text-[black] font-normal focus:bg-[#2c2e3a] active::border-2 active::border-white focus:text-white text-sm px-2 " type="text" placeholder="Contact No.(Optional)" {...register("Phone")
                 } />
 
-                <textarea className="w-full min-h-32 max-h-max py-3 px-2 rounded-lg text-[black] font-normal focus:bg-[#2c2e3a] active::border-2 active::border-white focus:text-white text-sm  " type="text" placeholder="Enter Your Message" {...register("Message", {
+                <textarea className="w-[90vmin] mx-auto min-h-32 max-h-max py-3 px-2 rounded-lg text-[black] font-normal focus:bg-[#2c2e3a] active::border-2 active::border-white focus:text-white text-sm  " type="text" placeholder="Enter Your Message" {...register("Message", {
                     required: { value: true, message: "*This field is Required" }
                 })} /> 
              

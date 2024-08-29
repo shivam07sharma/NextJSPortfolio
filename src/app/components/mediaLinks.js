@@ -4,7 +4,7 @@ import "../globals.css"
 const Media = (props) => {
     return (
         <>
-            <div className={`w-[87vmin] h-72 flex gap-5 mx-auto` + props.width}>
+            <div className={`w-max h-72 flex gap-5 mx-auto` + props.width}>
                 <Link href={"https://github.com/shivam07sharma"}>
                     <div className="h-6   w-6 overflow-hidden hover:shadow-sm  transition-all hover:scale-110 rounded-full hover:rotate-[360deg]"><Image src="/images/githubicon3.png" width={100} height={100} className="scale-105" alt="" /></div>
                 </Link>

@@ -65,14 +65,14 @@ const mySkills = ["C", "C++", "Python", "Java", "HTML", "CSS", "JavaScript", "Ta
 const ExtraSkill = ({ name }) => {
   return (
     <>
-      <div className='w-full h-10 border-2 border-gray-700 rounded-md pl-4 text-white text-lg font-medium flex items-center active:w-11/12  hover:justify-center mx-auto true-black '>{name}</div>
+      <div className='w-full min-h-10 max-h-max border-2 border-gray-700 rounded-md pl-4 text-white text-lg font-medium flex items-center active:w-11/12  hover:justify-center mx-auto true-black '>{name}</div>
     </>
   )
 }
 const Education = ({course,institute,date,marks}) => {
   return (
     <>
-      <div className='w-full md:w-72 h-max mx-1 p-4 border-2 border-white flex flex-col gap-3 text-white rounded-md card'>
+      <div className='w-full md:w-72 bg-[#050a44] h-max mx-1 p-4 border-2 border-white flex flex-col gap-3 text-white rounded-md card'>
         <h3 className='w-full text-lg font-normal'>{course}</h3>
         <hr />
         <h4 className=''>{institute}</h4>

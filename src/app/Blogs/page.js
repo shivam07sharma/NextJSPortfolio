@@ -20,7 +20,8 @@ const MyBlogs = () => {
     {Blogs.map(blog=>(
        <Link key={blog._id} href={`https://webblogwriter.netlify.app/BlogPost/${blog._id}`}> <Blog image={blog.image} title={blog.title} cont={blog.content}/> </Link>
     ))}
-    </div> }
+    </div> 
+    }
     {Error && 
     <div className='w-max h-20 text-red-500 font-semibold text-lg mx-auto my-[calc(45vh-48px)]'>
         Something Went Wrong! Please Try Again.
@@ -40,9 +41,9 @@ const LoadingBar=()=>{
 const Blog=({image,title,cont})=>{
     return(
         <>
-        <div className='w-11/12 md:w-[46vmin] min-h-52 max-h-max border-white border-2 rounded-md flex flex-col justify-between bg-black overflow-hidden'>
+        <div className='w-11/12 md:w-[46vmin] min-h-52 max-h-max border-white border-2 rounded-md flex flex-col justify-between mx-auto bg-black overflow-hidden'>
             <div className='w-full h-max max-h-52 overflow-hidden'>
-                <img src={image} alt="images" className='w-full h-max'/>
+                {image && <img src={image} alt="images" className='w-full h-max'/>}
             </div>
             <div className='text-white text-lg px-4 my-3 line-clamp-2'>
                 {title}
