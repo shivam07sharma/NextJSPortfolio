@@ -34,7 +34,7 @@ const MyBlogs = () => {
 const LoadingBar=()=>{
     return(
         <>
-            <div className='w-12 h-12 rounded-full border-4 border-t-black border-white mt-[calc(45vh-48px)] mx-auto  animate-spin'></div>
+            <div className='w-12 h-12 rounded-full border-4 border-t-black border-white my-[calc(45vh-48px)] mx-auto  animate-spin'></div>
         </>
     )
 }

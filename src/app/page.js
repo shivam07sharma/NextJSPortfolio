@@ -14,7 +14,7 @@ function Homepage(){
             <div className='whitespace-nowrap overflow-hidden typing-animation text-cyan-300'  >Web Developer</div>
           </div>
           <div className=' flex mt-16 '>
-          <a href="https://drive.google.com/file/d/11qf3XNgarsebOZXHBFPqv7xW-Xiq6HfN/view?usp=drive_link">  <div className="w-max h-9 px-2 bg-[#050a44] hover:bg-red-900 my-auto border-white border-2 rounded-lg flex items-center text-white text-base">Download Resume</div>
+          <a href="https://drive.google.com/file/d/1gJ4-u0Ua27C3kR5V18FQPKBDUCCNOlI7/view?usp=drive_link">  <div className="w-max h-9 px-2 bg-[#050a44] hover:bg-red-900 my-auto border-white border-2 rounded-lg flex items-center text-white text-base">Download Resume</div>
           </a>
           <a href="https://www.github.com/shivam07sharma"> <div className="w-max h-9 px-2 bg-[#050a44]  hover:bg-red-900 mx-4 my-auto border-white border-2 rounded-lg flex items-center  text-white text-base">Visit Github</div>
           </a>
