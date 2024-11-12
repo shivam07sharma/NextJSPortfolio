@@ -32,7 +32,7 @@ return (
     <>
         <div className="w-[88vmin] h-max mx-auto my-10  " >
             <form onSubmit={handleSubmit(onSubmit)} className="flex w-11/12 h-full   flex-col justify-center items-center gap-5">
-
+        
                 <input className="w-[90vmin] mx-auto h-8 rounded-lg text-[black] font-normal focus:bg-[#2c2e3a]  focus:text-white active::border-2 active::border-white text-sm px-2" type="text" placeholder="Enter Name" {...register("Name", {
                     required: { value: true, message: "*This field is Required" }
                 })} />
@@ -50,8 +50,8 @@ return (
                   <button className={`w-max px-4 py-1 h-max mt-4 bg-red-600 text-white rounded-lg  transition-all `} >All Fields are Required</button>
 
                   :<button className={`w-max px-5 py-1 h-max mt-4 bg-[#0a21c0] text-white rounded-lg active:bg-[#2c2e3a] hover:rounded-full transition-all ${msgSent && "bg-green-400"}`} type="submit">{msgSent?"Thanks For Contacting Us :)":"Send"}</button>}
-                 
-            </form>
+            </form>     
+        
         </div>
         <div className=" my-14 w-[88vmin] mx-auto">
             <Media width={"w-full"}/>

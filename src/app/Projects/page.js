@@ -1,5 +1,6 @@
 "use client"
 import Link from "next/link"
+import Image from "next/image"
 import "../globals.css"
 import myProjects from "../components/Projects"
 const Html=()=>{
@@ -26,7 +27,7 @@ const Project=(props)=>{
 
             <div className="w-11/12 md:w-[330px] mx-auto h-56 rounded-3xl border-gray-700 border my-3 overflow-hidden hover:shadow-sm hover:shadow-cyan-400 hover:scale-105 get-transition">
                 
-                <img src={props.imageLink} alt="image" className="w-full h-4/6 object-cover opacity-85 filter"/>
+                <Image src={"/"+props.imageLink} width={100} height={100} alt={props.title} className="w-full h-4/6 object-cover opacity-85 filter"/>
                 <div className=" my-1 mx-2 text-white text-lg">{props.title}</div>
                 <div className="mx-3">
                     <div className="flex gap-3">

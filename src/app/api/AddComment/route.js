@@ -1,12 +1,12 @@
 import { NextResponse } from "next/server";
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 export async function POST(req) {
     try{
         let msg=req.body;
-    mongoose.connect(process.env.MONGODB_URI+"Comments");
-    const schema=mongoose.Schema({
-        Comment:String,
-        Date:{type:Date,default:Date.now()}
+        mongoose.connect(process.env.MONGODB_URI+"Portfolio");
+        const schema=mongoose.Schema({
+            Comment:String,
+            Date:{type:Date,default:Date.now()}
     })
     const Model=mongoose.models.PublicComments || mongoose.model("PublicComments",schema);
     const newdoc=new Model({

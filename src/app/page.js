@@ -1,7 +1,16 @@
 "use client"
 import "./globals.css";
 import { DisplaySkills } from "./About/page";
+import { useEffect, useState } from "react";
 function Homepage(){
+  const role=["Web Developer","Software Developer"];
+  const [rolestate,setrole]=useState(0);
+  useEffect(()=>{
+    setTimeout(() => {
+      let i=(rolestate+1)%2;
+      setrole(i);
+    }, 4000);
+  },[rolestate])
   return(<>
         
       <div className='lg:flex mb-9 h-fit'>
@@ -11,7 +20,7 @@ function Homepage(){
 
             <div>Hi, My name is Shivam</div>
             <div>and I am a Passionate</div>
-            <div className='whitespace-nowrap overflow-hidden typing-animation text-cyan-300'  >Web Developer</div>
+            <div className='whitespace-nowrap overflow-hidden typing-animation text-cyan-300'  >{role[rolestate]}</div>
           </div>
           <div className=' flex mt-16 '>
           <a href="https://drive.google.com/file/d/1gJ4-u0Ua27C3kR5V18FQPKBDUCCNOlI7/view?usp=drive_link">  <div className="w-max h-9 px-2 bg-[#050a44] hover:bg-red-900 my-auto border-white border-2 rounded-lg flex items-center text-white text-base">Download Resume</div>
@@ -23,7 +32,7 @@ function Homepage(){
         </div>
       </div>
       <div className=' w-screen md:w-1/2 h-auto lg:h-[90vh] grid place-content-center'>
-       <img src="images/image1.jpg" alt="" className=' mx-auto my-auto mix-blend-lighten w-8/12 h-auto bg-cover rounded-full ' style={{ boxShadow:"0px 0px 40px rgb(103 232 249)"}} />
+       <img src="/images/image1.jpg" alt="image" className=' mx-auto my-auto filter w-8/12 h-auto bg-cover rounded-full' style={{ boxShadow:"0px 0px 40px rgb(103 232 249)"}} />
       </div>
       </div>
    <div className="w-screen md:w-[80vw] h-max py-3 mx-auto bg-black flex flex-col md:flex-row items-center md:justify-around mb-10">
