@@ -2,7 +2,7 @@
 
 var myProjects=[
     {
-        projLink:"https://webblogwriter.netlify.app",
+        projLink:"https://webblogshare.netlify.app",
         imageLink:"images/BlogWriter.png",
         title:"Full Stack Blog Website",
         tailwind:true,

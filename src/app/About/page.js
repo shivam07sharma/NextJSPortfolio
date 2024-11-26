@@ -19,12 +19,12 @@ const Aboutme = () => {
           <img src="svgs/about.png" alt="" className='image-transition' />
         </div>
         <div className='my-9 w-11/12 mx-auto'>
-          <h2 className='text-white text-xl md:text-2xl  my-5 w-full font-normal mx-auto text-center'>
+          <h2 className='text-white text-lg md:text-2xl  my-5 w-full font-normal mx-auto text-center'>
             Hey There! <br /> Myself Shivam Sharma and I  am a Proficient Web Developer from Kanpur Uttar Pradesh.
           </h2>
         </div>
         <div className='my-5 mx-auto w-screen font-semibold  flex gap-2 flex-wrap'>
-          <h2 className='text-white text-xl md:text-2xl my-5 w-screen block font-semibold mx-1'>EDUCATIONAL QUALIFICATIONS</h2>
+          <h2 className='text-white text-xl md:text-2xl my-5 w-11/12 md:w-screen block font-semibold md:mx-1 ml-4'>EDUCATIONAL QUALIFICATIONS</h2>
           <Education course={"BACHELORS OF COMPUTER APPLICATIONS"} institute={"CSJMU KANPUR, UTTAR PRADESH"} date={"2022-2025"} marks={"7.78 CGPA"} />
           <Education course={"INTERMEDIATE"} institute={"UP BOARD"} date={"2022"} marks={"72%"} />
           <Education course={"HIGH SCHOOL"} institute={"UP BOARD"} date={2020} marks={"80%"} />
@@ -50,7 +50,7 @@ const DisplaySkills = () => {
   const Skill = ({ name }) => {
     return (
       <>
-        <div className='min-w-[48%] max-w-fit h-10 border-2 border-gray-700 rounded-md  text-white text-lg font-medium flex items-center active::w-11/12  transition-all colorTransition hover:justify-center mx-auto px-4 '>{name}</div>
+        <div className='min-w-[48%] max-w-fit h-10 border-2 border-gray-700 rounded-md  text-white text-sm md:text-lg font-normal md:font-medium flex items-center active::w-11/12  transition-all colorTransition hover:justify-center mx-auto px-4 appear-animation'>{name}</div>
       </>
     )
   }
@@ -69,14 +69,14 @@ const DisplaySkills = () => {
 const ExtraSkill = ({ name }) => {
   return (
     <>
-      <div className='w-full min-h-10 max-h-max border-2 border-gray-700 rounded-md pl-4 text-white text-lg font-medium flex items-center active:w-11/12  hover:justify-center mx-auto true-black '>{name}</div>
+      <div className='w-full min-h-10 max-h-max border-2 border-gray-700 rounded-md pl-4 text-white text-sm font-normal md:text-lg md:font-medium flex items-center active:w-11/12  hover:justify-center mx-auto true-black '>{name}</div>
     </>
   )
 }
 const Education = ({ course, institute, date, marks }) => {
   return (
     <>
-      <div className='w-full md:w-72 bg-[#050a44] h-max mx-1 p-4 border-2 border-white flex flex-col gap-3 text-white rounded-md card'>
+      <div className='w-11/12 md:w-72 bg-[#050a44] h-max mx-auto md:mx-1 p-4 border-2 border-white flex flex-col gap-3 text-white rounded-md card'>
         <h3 className='w-full text-lg font-normal'>{course}</h3>
         <hr />
         <h4 className=''>{institute}</h4>
@@ -111,8 +111,8 @@ const ShowCertificates = () => {
     <div className="w-11/12 h-max mx-auto">
       <div className="my-10 text-white text-xl md:text-2xl  font-semibold mx-1"> {"Certificates Acquired".toUpperCase()}</div>
     </div>
-    <div className='w-full h-max flex items-center justify-between'>
-    <div className='w-10 h-10  p-2 rounded-full text-2xl shadow-lg shadow-blue-700 mx-2 md:mx-5 grid place-content-center text-white font-extrabold active:bg-slate-700'
+    <div className='w-full h-max flex items-center justify-between scroll-animat'>
+    <div className='w-10 h-10  p-2 rounded-full text-2xl shadow-lg shadow-blue-700 mx-2 md:mx-5 grid place-content-center text-white font-extrabold active:bg-slate-700 '
         onClick={() => { setCertIndex(CertIndex < 1 ? CertImages.length : CertIndex - 1) }}>
         {"<"}</div>
       <Certificate />

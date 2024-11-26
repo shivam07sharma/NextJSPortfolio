@@ -20,7 +20,7 @@ const Footer = () => {
   const buttonref=useRef(0);
   return (
     <>
-    <div className=' w-screen h-max py-5 bg-[#050a44] border-t-4 border-white mt-10'>
+    <footer className=' w-screen h-max py-5 bg-[#050a44] border-t-4 border-white mt-10'>
       <div className='w-[98vmin] mx-auto flex flex-col justify-around items-center'>
         
             <div className='w-full h-max mx-auto flex flex-wrap gap-1 items-center justify-center'>
@@ -37,6 +37,8 @@ const Footer = () => {
                 <Link href="mailto:shivam0701sharma@gmail.com" className='no-underline mx-auto md:mx-0'>
                   <li className='list-none'>Email : shivam0701sharma@gmail.com</li>
                   </Link>
+                  <Link href="/Projects" className='no-underline mx-auto md:mx-0'>
+                  <li className='list-none'>View Projects</li> </Link>
                   <Link href="https://github.com/shivam07sharma" className='no-underline mx-auto md:mx-0'>
                   <li className='list-none'>View Github</li>
                   </Link>
@@ -52,13 +54,14 @@ const Footer = () => {
                   <Link href="/ContactMe" className='no-underline mx-auto md:mx-0'>
                   <li className='list-none'>Feedback</li>
                   </Link>
+                  
               </ul>
             </div>
             <div className='h-10 my-2 overflow-hidden'>
             <Media width={"w-20 mix-blend-screen"}/>
             </div>
       </div>
-    </div>
+    </footer>
     </>
   )
 }

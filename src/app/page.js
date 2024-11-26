@@ -32,13 +32,13 @@ function Homepage(){
         </div>
       </div>
       <div className=' w-screen md:w-1/2 h-auto lg:h-[90vh] grid place-content-center'>
-       <img src="/images/image1.jpg" alt="image" className=' mx-auto my-auto filter w-8/12 h-auto bg-cover rounded-full' style={{ boxShadow:"0px 0px 40px rgb(103 232 249)"}} />
+       <img src="/images/image1.jpg" alt="image" className=' mx-auto my-auto filter w-8/12 h-auto bg-cover rounded-full ' style={{ boxShadow:"0px 0px 40px rgb(103 232 249)"}} />
       </div>
       </div>
    <div className="w-screen md:w-[80vw] h-max py-3 mx-auto bg-black flex flex-col md:flex-row items-center md:justify-around mb-10">
-    <img src="svgs/about2.svg" className="hidden md:flex w-11/12 md:w-2/6 max-h-52 md:h-fit hover:scale-105 get-transition" alt="" />
+    <img src="svgs/about2.svg" className="hidden md:flex w-11/12 md:w-2/6 max-h-52 md:h-fit hover:scale-105 get-transition scroll-animat" alt="" />
    <DisplaySkills />
-   <img src="svgs/about2.svg" className="md:hidden flex w-11/12 md:w-2/6 max-h-52 md:h-fit hover:scale-105 get-transition" alt="" />
+   <img src="svgs/about2.svg" className="md:hidden flex w-11/12 md:w-2/6 max-h-52 md:h-fit hover:scale-105 get-transition scroll-animat" alt="" />
    </div>
   </>)
 }
