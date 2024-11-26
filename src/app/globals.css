@@ -1,19 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
-body{
-    background-color: black;
-}
-@keyframes typing{
 
-    0% { 
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+@keyframes typing {
+
+    0% {
         width: 0%;
-     }
-    100%{
+    }
+
+    100% {
         width: 70%;
     }
 }
+
 .typing-animation {
     display: inline-block;
     width: 0;
@@ -21,111 +24,140 @@ body{
     white-space: nowrap;
     animation: typing 1.8s steps(20) 1s infinite;
 }
-.get-transition{
+
+.get-transition {
     transition: all 0.5s;
 }
 
-@keyframes colors{
-    0%{
-        background-color:wheat;
+@keyframes colors {
+    0% {
+        background-color: wheat;
         color: black;
     }
-    20%{
-        background-color:aqua;
+
+    20% {
+        background-color: aqua;
     }
-    40%{
-        background-color:yellow;
+
+    40% {
+        background-color: yellow;
         color: black;
     }
-    60%{
-        background-color:green; 
+
+    60% {
+        background-color: green;
     }
-    80%{
-        background-color:red;
+
+    80% {
+        background-color: red;
     }
-    100%{
-        background-color:blueviolet;
+
+    100% {
+        background-color: blueviolet;
     }
 
 }
+
 @keyframes imagetransit {
-    0%{
+    0% {
         transform: translateY(0px);
     }
-    25%{
+
+    25% {
         transform: translateY(-8px);
     }
-        50%{
-            transform: translateY(0px);
-        }
-    75%{
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    75% {
         transform: translateY(8px);
     }
-    100%{
+
+    100% {
         transform: translateY(0px);
     }
 }
-.image-transition{
+
+.image-transition {
     animation: imagetransit 3s infinite;
 }
-.colorTransition:hover{
+
+.colorTransition:hover {
     animation: colors 1.5s infinite;
 }
 
-.true-black{
+.true-black {
     background: linear-gradient(to right, #434343 0%, black 100%);
     transition: all 1s;
 }
-.true-black:hover{
+
+.true-black:hover {
     background-color: black;
 }
 
-@keyframes appear{
-    from{
+@keyframes appear {
+    from {
         opacity: 0;
-        translate: -100%;
+        translate: -40%;
     }
-    to{
+
+    to {
         opacity: 1;
         scale: 1;
         translate: 0%;
     }
 }
-.appear-animation:nth-child(even){
-    animation: appear 3s linear;
-    animation-timeline: view();
-    animation-range:  entry 0% cover 13%;
-}
 
-.appear-animation:nth-child(odd){
-    animation: appear-r-to-l 3s ease-in;
-    animation-timeline: view();
-    animation-range:  entry 0% cover 13%;
-}
-
-@keyframes scrol {
-    from{
+@keyframes appear-r-to-l {
+    from {
         opacity: 0;
-        scale: 0.4;
+        translate: 40%;
     }
-    to{
+
+    to {
         opacity: 1;
-        scale: 1;
+        translate: 0%;
     }
 }
-.scroll-animat{
+
+
+
+.appear-animation{
+    animation: scrol 4s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 17%;
+}
+
+.scroll-animat {
     animation: scrol 4s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
 }
 
-@keyframes appear-r-to-l{
-    from{
-        opacity: 0;
-        translate: 100%;
+@media screen and (min-width:800px){
+    .appear-animation:nth-child(even) {
+        animation: appear 3s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 13%;
     }
-    to{
+    
+    .appear-animation:nth-child(odd) {
+        animation: appear-r-to-l 3s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 13%;
+    }
+}
+
+@keyframes scrol {
+    from {
+        opacity: 0;
+        scale: 0.4;
+    }
+
+    to {
         opacity: 1;
-        translate: 0%;
+        scale: 1;
     }
 }
