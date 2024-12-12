@@ -48,8 +48,8 @@ const Footer = () => {
                   <Link href="https://www.instagram.com/sh.ivem/?utm_source=ig_web_button_share_sheet" className='no-underline mx-auto md:mx-0'>
                   <li className='list-none'>Instagram</li>
                   </Link>
-                  <Link href="mailto:shivam0701sharma@gmail.com" className='no-underline mx-auto md:mx-0'>
-                  <li className='list-none'>Follow on X</li>
+                  <Link href="/Blogs" className='no-underline mx-auto md:mx-0'>
+                  <li className='list-none'>Read Blogs</li>
                   </Link>
                   <Link href="/ContactMe" className='no-underline mx-auto md:mx-0'>
                   <li className='list-none'>Feedback</li>
